@@ -11,6 +11,7 @@ export default defineConfig({
 			'/tool/': sidebarGuide(),
 			'/node/': sidebarConfig(),
 			'/vue/': sidebarVue(),
+			'/js/': sideBarJs()
 		},
 
 		editLink: {
@@ -60,8 +61,6 @@ function sidebarGuide() {
 			text: '问题记录',
 			collapsible: true,
 			items: [
-				{ text: 'Migration from VuePress', link: '/tool/migration-from-vuepress' },
-				{ text: '箭头函数和普通函数有什么区别', link: '/tool/arrowfn-are-different-from-normal-fn' },
 				{ text: '阻止google浏览器自动更新', link: '/tool/prevent-google-automatic-update' },
 			],
 		},
@@ -87,6 +86,18 @@ function sidebarVue() {
 			items: [
 				{ text: 'node-basis', link: '/node/node-basis' },
 				{ text: 'nodeJS操作数据库', link: '/node/operating-db' },
+			],
+		},
+	]
+}
+
+function sideBarJs() {
+	return [
+		{
+			text: 'javascript',
+			items: [
+				{ text: 'js常用工具函数', link: '/js/js-tools' },
+				{ text: '箭头函数和普通函数有什么区别', link: '/js/arrowfn-are-different-from-normal-fn' },
 			],
 		},
 	]
